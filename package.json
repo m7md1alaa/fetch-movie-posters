@@ -1,0 +1,37 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "movie-posters-icons",
+  "title": "movie posters icons",
+  "description": "",
+  "icon": "command-icon.png",
+  "author": "m7md1alaa",
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "index",
+      "title": "movie posters icons",
+      "subtitle": "fetch-movie-poster",
+      "description": "monitors a specified directory on your macOS system for newly added subdirectories (movie folders) and automatically sets a custom icon for each folder based on the movie's poster. It leverages the TMDB API to fetch the movie poster and AppleScript to set the directory icon. Here’s a breakdown of its functionality",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.79.1"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.8",
+    "@types/node": "20.8.10",
+    "@types/react": "18.3.3",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "prepublishOnly": "echo \"\\n\\nIt seems like you are trying to publish the Raycast extension to npm.\\n\\nIf you did intend to publish it to npm, remove the \\`prepublishOnly\\` script and rerun \\`npm publish\\` again.\\nIf you wanted to publish it to the Raycast Store instead, use \\`npm run publish\\` instead.\\n\\n\" && exit 1",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
